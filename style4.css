@@ -1,0 +1,150 @@
+:root {
+    --royal-blue-light: #d940ed17;
+    --royal-blue-dark: #3946d4;
+    --white: #fff;
+    --background: #e2e3e9;
+}
+
+* {
+    padding: 0%; 
+}
+
+body{
+    background-color: rgb(38, 7, 68);
+    background-color: rgb(210, 170, 248);
+    background-image: url(img/capaoqueeamassoterapia.jpg);
+    background-size: cover;
+    max-height: 100%;
+    font-size: 20px;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    color: rgb(226, 103, 210);
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.438);
+    color: rgb(230, 138, 217);
+}
+
+li {
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color:  rgb(98, 9, 121);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cardapio :hover {
+    transition: 0.3s ease;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 4.6875rem;
+    color: rgb(142, 11, 175);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.menu a {
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.btn-menu {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        display: block;
+        position: absolute;
+        top: 4.6875rem;
+        left: 0%;
+        background: black;
+        text-align: center;
+        width: 100%;
+        height: 0%;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+    .menu a {
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 1px solid rgba(206, 72, 247, 0.096);
+        border-radius: 0%;
+    }
+    .btn-menu {
+        background: none;
+        border: none;
+        font: inherit;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: white
+        padding-block 1rem;
+        cursor: pointer; 
+    }
+    .hamburger {
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+        color:  white;
+    }
+    .hamburger::before,
+    .hamburger::after {
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+    .nav.active .menu {
+        height: calc(100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    .nav.active .hamburger {
+        border-top-color: transparent;
+    }
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+    .nav.active .hamburger::after{
+        transform: rotate(-135deg);
+        top: 7px;
+    }
+
+
+
+}

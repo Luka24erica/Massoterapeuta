@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Érica Massoterapeuta</title>
+    <link rel="shortcut icon" href="img/favicon-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="style4.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo">Érica Massoterapeuta</a>
+        <nav class="nav">
+        <button 
+        class="btn-menu"
+        aria-label="Abrir menu"
+        aria-haspopup="true"
+        aria-controls="menu"
+        aria-expanded="false"><span class="hamburger"></span>
+        </button>
+            <nav class="cardapio">
+                <ul class="menu" id="menu" role="menu">
+                <li><a class="cardapio" href="index.html">Página Inicial</a></li>
+                <li><a class="cardapio" href="index2.html">O que é a massoterapia?</a></li>
+                <li><a class="cardapio" href="index3.html">Sobre mim</a></li>
+                <li><a class="cardapio" href="index4.html">Formulário</a></li>
+            </ul>
+            </nav>
+            
+        </nav>
+    </header>
+    
+    <aside>
+        <form>
+            <h2>Preencha o formulário abaixo para receber atualizações do site:</h2>
+            <fieldset>
+                <label for="Nome Completo">Nome Completo</label>
+                <input type="text">
+                <br>
+                <br>
+                <label for="Telefone">Telefone Completo</label>
+                <input type="number">
+                <br>
+                <br>
+                <label for="Email">Email</label>
+                <input type="email" name="" id="">
+            </fieldset>
+            <br>
+            <fieldset>
+                <div>
+                    <label>Deseja receber as novidades?</label>
+                    <br>
+                    <label>
+                        <input type="radio" name="opcao1" value="Sim">Sim
+                    </label>
+                    <label>
+                        <input type="radio" name="opcao2" value="Não">Não
+                    </label>
+                </div>
+        
+            </fieldset>
+                <br>
+            <fieldset>
+            <div>
+                <label for="">Feedback:</label>
+            </div>
+
+            <div>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <input type="submit" onclick="funcao2 ()" value="Enviar">
+            </fieldset>
+        </form>
+    </aside>
+    <script src="formulario.js"></script>
+</body>
+</html>

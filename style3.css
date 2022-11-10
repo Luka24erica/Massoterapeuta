@@ -1,0 +1,252 @@
+:root {
+    --royal-blue-light: #d940ed17;
+    --royal-blue-dark: #3946d4;
+    --white: #fff;
+    --background: #e2e3e9;
+}
+
+* {
+    margin: 0%;
+    padding: 0%; 
+}
+
+h1{
+    font-style: oblique;
+    color: rgb(0, 0, 0);
+    text-align: start;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    background-image: url(img/capasobremim.jpg);
+    background-size: cover;
+    max-height: 100%;
+    font-size: 20px;
+    background-repeat: no-repeat;
+}
+
+video{
+    justify-content: center;
+    width: 470px;
+    height: auto;
+    text-align: center;
+    display: block;
+    margin: 0%;
+}
+
+img{
+    width: 24%;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1%;
+}
+
+li {
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color:  rgb(98, 9, 121);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cardapio :hover {
+    transition: 0.3s ease;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+a {
+    color:  white;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 4.6875rem;
+    color: rgb(142, 11, 175);
+}
+
+.rodape{
+    color: rgba(247, 142, 233, 0.418);
+    text-align: center;
+    padding: auto;
+}
+
+#bio {
+    font-size: 30px;
+    color: rgb(253, 253, 253);
+    text-shadow: rgb(198, 78, 202);
+    text-justify: inter-word;
+    padding: 20px;
+}
+
+#conteudo {
+    background-color: rgba(247, 185, 236, 0);
+    display: flex;
+}
+
+#conteudo-sm {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+#local p {
+    font-family: 'Houses';
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.conteudo-texto {
+    padding: 30px;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+.video{
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s ease;
+    padding: 1% 0;
+    margin: 0px 2%;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0);
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+    margin: 2%;
+    margin-top: 0%;
+}
+
+.video-link {
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 1% 0;
+    margin: 0px 2%;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0);
+}
+
+.video-link:hover {
+    border-bottom: 4px solid rgb(255, 255, 255);
+    border-top: 4px solid rgb(255, 255, 255);
+    border-left: 4px solid rgb(255, 255, 255);
+    border-right: 4px solid rgb(255, 255, 255);
+    transition: 0.3s ease;
+    background-color: rgb(249, 87, 255);
+    padding: 1% 0;
+    margin: 0px 2%;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0);
+    font-size: 1.2em;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:  white;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.menu a {
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.btn-menu {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        display: block;
+        position: absolute;
+        top: 4.6875rem;
+        left: 0%;
+        background: black;
+        text-align: center;
+        width: 100%;
+        height: 0%;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+    .menu a {
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 1px solid rgba(206, 72, 247, 0.096);
+        border-radius: 0%;
+    }
+    .btn-menu {
+        background: none;
+        border: none;
+        font: inherit;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: white
+        padding-block 1rem;
+        cursor: pointer; 
+    }
+    .hamburger {
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+        color:  white;
+    }
+    .hamburger::before,
+    .hamburger::after {
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+    .nav.active .menu {
+        height: calc(100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    .nav.active .hamburger {
+        border-top-color: transparent;
+    }
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+    .nav.active .hamburger::after{
+        transform: rotate(-135deg);
+        top: 7px;
+    }
+
+
+
+}
